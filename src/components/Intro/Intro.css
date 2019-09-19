@@ -1,0 +1,42 @@
+.main__content-intro {
+    background: #70b1e6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.main__content-intro--logo {
+    max-width: 30rem;
+}
+
+.main__content-intro--container h2{
+    font-size: 2rem;
+}
+
+.customer__btn {
+    padding: 1rem;
+    margin-right: .5rem;
+    background-color: rgb(59, 59, 59);
+    color: #fff;
+}
+
+.business__btn {
+    padding: 1rem;
+    margin-left: .5rem;
+    background-color: rgb(59, 59, 59);
+    color: #fff;
+}
+
+
+@media screen and (max-width: 800px) {
+    .main__content-intro {
+
+        align-items: flex-start;
+        height: 90vh;
+    }
+
+    .main__content-intro--logo {
+        max-width: 25rem;
+    }
+}

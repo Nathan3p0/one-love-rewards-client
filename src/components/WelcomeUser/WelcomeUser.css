@@ -1,0 +1,35 @@
+.user__content-info--welcome {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: #ccc;
+    width: 40rem;
+    margin: 2rem 0;
+  }
+
+  .user__content-info--welcome-initial {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 1rem;
+  }
+
+  .user__content-info--welcome-user {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    margin-left: 1rem;
+  }
+
+  .user__content-info--welcome-circle {
+    display: inline-block;
+    height: 3rem;
+    width: 3rem;
+    line-height: 3rem;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 2em;
+  }

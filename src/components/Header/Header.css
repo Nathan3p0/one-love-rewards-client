@@ -1,0 +1,10 @@
+.main__header {
+    display: flex;
+    background-color: #bbb;
+    height: 2.5rem;
+    align-items: center;
+}
+
+.main__header h1 {
+    margin-left: 1rem;
+}
