@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: 1fr 2fr;
     height: 95vh;
+    background-color: #FDFFFC;
 }
 
 @media screen and (max-width: 800px) {
