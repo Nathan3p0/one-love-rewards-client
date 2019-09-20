@@ -2,4 +2,60 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #CF5C36;
+}
+
+.customerLoginForm {
+    background-color: rgb(255, 255, 255);
+    padding: 5rem;
+    width: 60%;
+}
+
+input[type="tel"]{
+    width: 100%;
+    border: .2rem solid rgba(0, 0, 0, 0.3);
+    border-radius: .3rem;
+    font-size: 1.2em;
+    margin-right: .2rem;
+    margin-top: 1rem;
+}
+
+input[type="tel"]:hover {
+    cursor: pointer;
+    border: .2rem solid rgba(0, 162, 255, 0.849);
+}
+
+label {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 2rem 0;
+}
+
+button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+button.cust-btn {
+    width: 100%;
+    margin-top: 2rem;
+    transition: all 0.5s cubic-bezier(0.65, -0.25, 0.25, 1.95);
+    font-weight: 900;
+    color: #202121;
+    padding: 1.25rem 2rem;
+    background: #FFE74C;
+    text-transform: uppercase;
+}
+
+button.cust-btn:hover,
+button.cust-btn:focus,
+button.cust-btn:active {
+    letter-spacing: 0.125rem;
 }
