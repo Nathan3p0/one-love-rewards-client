@@ -2,6 +2,7 @@ import React from 'react'
 import WelcomeUser from '../../components/WelcomeUser/WelcomeUser'
 import UserPoints from '../../components/UserPoints/UserPoints'
 import RewardsList from '../../components/RewardsList/RewardsList'
+import './RewardsDisplay.css'
 
 const RewardsDisplay = () => {
     return (

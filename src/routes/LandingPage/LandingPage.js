@@ -13,6 +13,13 @@ class LandingPage extends Component {
         businessLogin: false
     }
 
+    handleSearchSuccess = () => {
+        const { location, history } = this.props
+        const destination = (location.state || {}).from || '/rewards'
+
+        history.push(destination)
+    }
+
     handleCustomerLoginToggle = () => {
         const { customerLogin } = this.state
 
@@ -44,7 +51,7 @@ class LandingPage extends Component {
             <main className="main__content">
                 <Intro handleBusinessLoginToggle={this.handleBusinessLoginToggle} handleCustomerLoginToggle={this.handleCustomerLoginToggle} />
                 {description && <Description />}
-                {customerLogin && <CustomerLogin />}
+                {customerLogin && <CustomerLogin onSearchSuccess={this.handleSearchSuccess} />}
                 {businessLogin && <BusinessLogin />}
             </main>
         )

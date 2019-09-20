@@ -1,0 +1,26 @@
+.user__content-info {
+    display: flex;
+    justify-content: center;
+  }
+
+  .user__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 95vh;
+    padding: 1rem 2rem;
+  }
+
+.user__content-rewards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .user__content-rewards h3 {
+    margin-top: 2rem;
+  }
+
+  .user__content-rewards ul {
+    list-style-type: none;
+    width: 75%;
+  }
