@@ -1,0 +1,37 @@
+
+
+.dashboard__menu {
+    max-width: 80vw;
+    margin: 15vh auto;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+}
+
+.dashboard__menu-option {
+    margin: 0 auto;
+    width: 20rem;
+    height: 15rem;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dashboard__menu-option.redeem,
+.dashboard__menu-option.delete {
+    background-color: #CF5C36;
+}
+
+.dashboard__menu-option.add-points {
+    background-color: #FFE74C;
+}
+
+.dashboard__menu-option.edit,
+.dashboard__menu-option.add-member {
+    background-color: #00779a ;
+}
+
+.dashboard__menu-option.see-all {
+    background-color: #87B99A ;
+}

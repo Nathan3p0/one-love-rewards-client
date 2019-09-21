@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { Switch, Route } from 'react-router-dom'
 import './LandingPage.css'
 import Intro from '../../components/Intro/Intro'
 import Description from '../../components/Description/Description'
