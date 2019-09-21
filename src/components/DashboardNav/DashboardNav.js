@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const DashboardNav = () => {
     return (
-        <nav className="dashboard__menu">
+        <nav role="navigation" className="dashboard__menu">
             <Link to='/dashboard/redeem'>
                 <div className="dashboard__menu-option redeem">
                     <p>Redeem Points</p>

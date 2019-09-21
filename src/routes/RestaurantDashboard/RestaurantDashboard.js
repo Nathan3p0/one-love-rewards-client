@@ -2,12 +2,12 @@ import React, { Component } from 'react'
 import './RestaurantDashboard.css'
 import DashboardNav from '../../components/DashboardNav/DashboardNav'
 import { Route, Switch } from 'react-router-dom'
-import RedeemPoints from '../../components/RedeemPoints/RedeemPoints'
-import AddPoints from '../../components/AddPoints/AddPoints'
-import EditRewards from '../../components/EditRewards/EditRewards'
-import AddMember from '../../components/AddMember/AddMember'
-import AllMembers from '../../components/AllMembers/AllMembers'
-import DeleteMember from '../../components/DeleteMember/DeleteMember'
+import RedeemPoints from '../RedeemPoints/RedeemPoints'
+import AddPoints from '../AddPoints/AddPoints'
+import EditRewards from '../EditRewards/EditRewards'
+import AddMember from '../AddMember/AddMember'
+import AllMembers from '../AllMembers/AllMembers'
+import DeleteMember from '../DeleteMember/DeleteMember'
 
 class RestaurantDashboard extends Component {
     state = {}
