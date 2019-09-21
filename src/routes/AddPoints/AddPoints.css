@@ -1,0 +1,18 @@
+.dashboard__add-points {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dashboard__user-lookup--form h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    align-self: center;
+}
+
+.dashboard__user-lookup--form {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+}
