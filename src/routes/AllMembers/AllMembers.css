@@ -1,0 +1,76 @@
+.dashboard__all-members {
+    max-width: 62.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: .625rem;
+    padding-right: .625rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin: 1.2rem 0;
+    text-align: center;
+}
+
+h2 small {
+    font-size: 0.5rem;
+}
+
+.responsiveTable li {
+    border-radius: .2rem;
+    padding: 1.56rem 1.875rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.56rem;
+}
+
+.responsiveTable .tableHeader {
+    background-color: #95A5A6;
+    font-size: .9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03rem;
+}
+
+.responsiveTable .tableRow {
+    background-color: #ffffff;
+    box-shadow: 0rem 0rem .56rem 0rem rgba(0, 0, 0, 0.1);
+}
+
+.responsiveTable .col-1 {
+    flex-basis: 25%;
+}
+
+.responsiveTable .col-2 {
+    flex-basis: 25%;
+}
+
+.responsiveTable .col-3 {
+    flex-basis: 25%;
+}
+
+.responsiveTable .col-4 {
+    flex-basis: 25%;
+}
+
+@media all and (max-width: 767px) {
+    .responsiveTable .tableHeader {
+        display: none;
+    }
+    .responsiveTable li {
+        display: block;
+    }
+    .responsiveTable .col {
+        flex-basis: 100%;
+    }
+    .responsiveTable .col {
+        display: flex;
+        padding: .625rem 0;
+    }
+    .responsiveTable .col:before {
+        color: #6C7A89;
+        padding-right: .625rem;
+        content: attr(data-label);
+        flex-basis: 50%;
+        text-align: right;
+    }
+}

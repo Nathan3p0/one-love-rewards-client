@@ -13,3 +13,6 @@
 .main__header a {
     text-decoration: none;
 }
+.main__header-nav ul li{
+    display: inline-block;
+}
