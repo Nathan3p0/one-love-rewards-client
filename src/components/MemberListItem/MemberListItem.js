@@ -1,12 +1,12 @@
 import React from 'react'
 
-const MemberListItem = () => {
+const MemberListItem = (props) => {
     return (
         <li className="tableRow">
-            <div className="col col-1" data-label="Created">Create</div>
-            <div className="col col-2" data-label="Customer Name">George Beaver</div>
-            <div className="col col-3" data-label="Customer Email">blahblahblah@gmail.com</div>
-            <div className="col col-4" data-label="Customer Phone">7345550101</div>
+            <div className="col col-1" data-label="Created">{props.registered}</div>
+            <div className="col col-2" data-label="Customer Name">{props.name}</div>
+            <div className="col col-3" data-label="Customer Email">{props.email}</div>
+            <div className="col col-4" data-label="Customer Phone">{props.phone}</div>
         </li>
     )
 }

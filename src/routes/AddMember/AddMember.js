@@ -5,7 +5,7 @@ import './AddMember.css'
 
 const AddMember = () => {
     return (
-        <section class="dashboard__add-member">
+        <section className="dashboard__add-member">
             <AddMemberForm />
         </section>
     )

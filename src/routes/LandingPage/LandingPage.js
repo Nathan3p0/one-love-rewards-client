@@ -12,12 +12,21 @@ class LandingPage extends Component {
         businessLogin: false
     }
 
+    handleLoginSuccess = () => {
+        const { location, history } = this.props
+        const destination = (location.state || {}).from || '/dashboard'
+
+        history.push(destination)
+    }
+
     handleSearchSuccess = () => {
         const { location, history } = this.props
         const destination = (location.state || {}).from || '/rewards'
 
         history.push(destination)
     }
+
+
 
     handleCustomerLoginToggle = () => {
         const { customerLogin } = this.state
@@ -51,7 +60,7 @@ class LandingPage extends Component {
                 <Intro handleBusinessLoginToggle={this.handleBusinessLoginToggle} handleCustomerLoginToggle={this.handleCustomerLoginToggle} />
                 {description && <Description />}
                 {customerLogin && <CustomerLogin onSearchSuccess={this.handleSearchSuccess} />}
-                {businessLogin && <BusinessLogin />}
+                {businessLogin && <BusinessLogin onLoginSuccess={this.handleLoginSuccess} />}
             </main>
         )
     }

@@ -18,11 +18,15 @@ class CustomerLogin extends Component {
     }
 
     render() {
+        const { error } = this.state
         return (
             <section className="main__content-user_lookup">
                 <div className='cover'>
                     <form onSubmit={this.handlePhoneSubmit} className="customerLoginForm">
                         <h2>View What Rewards You've Earned</h2>
+                        <div role='alert'>
+                            {error && <p className='red'>{error}</p>}
+                        </div>
                         <div>
                             <label htmlFor="phone">Enter your phone number:</label>
                             <input type="tel" id="phone" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}"

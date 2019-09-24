@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import './AllMembers.css'
 import '../../components/MemberListItem/MemberListItem'
 import MemberListItem from '../../components/MemberListItem/MemberListItem'
@@ -8,10 +7,10 @@ const AllMembers = () => {
     const members = [
         {
             id: 1,
-            registered: 'date',
-            name: 'george',
-            email: 'lalal@lala.com',
-            phone: 7345551010
+            created: '07/31/2019',
+            customer_name: 'George Arnold',
+            customer_email: 'g.arnold@gmail.com',
+            customer_phone: 7345551010
         }
     ]
 
