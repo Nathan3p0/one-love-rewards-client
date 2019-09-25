@@ -8,17 +8,17 @@ const AddMemberForm = (props) => {
             <div>
                 <label htmlFor="name">Customer Name:</label>
                 <br />
-                <input type="text" id="name" name="name" placeholder="Full Name" required />
+                <input type="text" id="name" name="name" placeholder="Full Name" onChange={props.handleInputChange} required />
             </div>
             <div>
                 <label htmlFor="email">Customer Email:</label>
                 <br />
-                <input type="email" id="email" name="email" placeholder="Email" required />
+                <input type="email" id="email" name="email" placeholder="Email" onChange={props.handleInputChange} required />
             </div>
             <div>
                 <label htmlFor="customer-phone">Customer Phone Number:</label>
                 <br />
-                <input type="tel" id="customer-phone" name="phone_number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                <input type="tel" id="customer-phone" name="phone_number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" onChange={props.handleInputChange}
                     placeholder="734-555-0909" required />
             </div>
             <button type="submit" className="create-btn" >Create User</button>

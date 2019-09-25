@@ -8,7 +8,8 @@ class AddMember extends Component {
     state = {
         name: '',
         email: '',
-        phone_number: ''
+        phone_number: '',
+        error: null
     }
 
     handleSubmit = e => {
@@ -17,9 +18,10 @@ class AddMember extends Component {
         const newCustomer = {
             name: this.state.name,
             email: this.state.email,
-            phone_number: this.state.phone_number,
-            error: null
+            phone_number: this.state.phone_number
         }
+
+        console.log(newCustomer)
 
         DashboardApiService.createNewCustomer(newCustomer)
             .then(res => {
