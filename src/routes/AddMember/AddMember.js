@@ -45,7 +45,7 @@ class AddMember extends Component {
 
     handlePostSuccess = () => {
         const { location, history } = this.props
-        const destination = (location.state || {}).from || '/dashboard'
+        const destination = (location.state || {}).from || '/dashboard/members'
         history.push(destination)
     }
 

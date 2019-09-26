@@ -10,20 +10,27 @@ import AllMembers from '../AllMembers/AllMembers'
 import DeleteMember from '../DeleteMember/DeleteMember'
 
 class RestaurantDashboard extends Component {
-    state = {}
+    state = {
+        members: []
+    }
     render() {
         return (
-            <>
-                <Switch>
-                    <Route exact path={'/dashboard'} component={DashboardNav} />
-                    <Route path={'/dashboard/redeem'} component={RedeemPoints} />
-                    <Route path={'/dashboard/add-points'} component={AddPoints} />
-                    <Route path={'/dashboard/edit-rewards'} component={EditRewards} />
-                    <Route path={'/dashboard/add-member'} component={AddMember} />
-                    <Route path={'/dashboard/members'} component={AllMembers} />
-                    <Route path={'/dashboard/delete-member'} component={DeleteMember} />
-                </Switch>
-            </>
+            <section className='dashboard'>
+                <div>
+                    <p className='dashboard__menu-title'>Kingston Kitchen</p>
+                    <DashboardNav />
+                </div>
+                <div>
+                    <Switch>
+                        <Route path={'/dashboard/redeem'} component={RedeemPoints} />
+                        <Route path={'/dashboard/add-points'} component={AddPoints} />
+                        <Route path={'/dashboard/edit-rewards'} component={EditRewards} />
+                        <Route path={'/dashboard/add-member'} component={AddMember} />
+                        <Route path={'/dashboard/members'} component={AllMembers} />
+                        <Route path={'/dashboard/delete-member'} component={DeleteMember} />
+                    </Switch>
+                </div>
+            </section>
         )
     }
 }

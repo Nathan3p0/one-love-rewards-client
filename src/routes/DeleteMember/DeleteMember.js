@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import AddMemberForm from '../../components/AddMemberForm/AddMemberForm'
+import DeleteMemberForm from '../../components/DeleteMemberForm/DeleteMemberForm'
 import DashboardApiService from '../../services/dashboard-api-services'
 import './DeleteMember.css'
 
@@ -52,7 +52,7 @@ class AddMember extends Component {
     render() {
         return (
             <section className="dashboard__delete-member">
-                <AddMemberForm handleSubmit={this.handleSubmit} handleInputChange={this.handleInputChange} error={this.state.error} />
+                <DeleteMemberForm handleSubmit={this.handleSubmit} handleInputChange={this.handleInputChange} error={this.state.error} />
             </section>
         )
     }

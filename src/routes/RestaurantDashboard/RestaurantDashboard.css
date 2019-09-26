@@ -1,37 +1,20 @@
+.dashboard {
+    display: grid;
+    grid-template-columns: 19rem 1fr;
+    height: 90vh;
+}
 
+.dashboard__menu-title {
+    background-color: rgb(40, 155, 135);
+    border-top: 2px solid #fff;
+    color: #fff;
+    text-shadow: 1px 1px 5px #aaaaaa;
+    font-weight: 700;
+    font-size: 1.3rem;
+    padding: 1rem 0;
+    margin: 0;
+    text-align: center;
+}
 
 .dashboard__menu {
-    max-width: 80vw;
-    margin: 15vh auto;
-    display: grid;
-    grid-gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-}
-
-.dashboard__menu-option {
-    margin: 0 auto;
-    width: 20rem;
-    height: 15rem;
-    background-color: red;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.dashboard__menu-option.redeem,
-.dashboard__menu-option.delete {
-    background-color: #CF5C36;
-}
-
-.dashboard__menu-option.add-points {
-    background-color: #FFE74C;
-}
-
-.dashboard__menu-option.edit,
-.dashboard__menu-option.add-member {
-    background-color: #00779a ;
-}
-
-.dashboard__menu-option.see-all {
-    background-color: #87B99A ;
 }

@@ -5,6 +5,9 @@ const AddMemberForm = (props) => {
     return (
         <form onSubmit={props.handleSubmit} className="dashboard__add-member--form">
             <h2>Add New Member</h2>
+            <div role='alert'>
+                {props.error && <p className='red'>{props.error.detail}</p>}
+            </div>
             <div>
                 <label htmlFor="name">Customer Name:</label>
                 <br />

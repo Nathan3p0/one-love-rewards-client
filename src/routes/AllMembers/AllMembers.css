@@ -25,8 +25,10 @@ h2 small {
 }
 
 .responsiveTable .tableHeader {
-    background-color: #95A5A6;
+    background-color: rgb(40, 155, 135);
     font-size: .9rem;
+    font-weight: 700;
+    color: #fff;
     text-transform: uppercase;
     letter-spacing: 0.03rem;
 }
