@@ -6,26 +6,21 @@ import './DeleteMember.css'
 
 class AddMember extends Component {
     state = {
-        name: '',
-        email: '',
         phone_number: '',
+        deleteConfirm: false,
         error: null
+    }
+
+    handleDeleteConfirm = () => {
+        this.setState({ deleteConfirm: true })
     }
 
     handleSubmit = e => {
         e.preventDefault()
 
-        const newCustomer = {
-            name: this.state.name,
-            email: this.state.email,
-            phone_number: this.state.phone_number
-        }
-
-        console.log(newCustomer)
-
-        DashboardApiService.createNewCustomer(newCustomer)
+        DashboardApiService.deleteCustomer(this.state.phone_number)
             .then(res => {
-                this.handlePostSuccess()
+                this.props.history.push(`/dashboard/members`);
             })
             .catch(res => {
                 this.setState({ error: res.error })
@@ -45,14 +40,14 @@ class AddMember extends Component {
 
     handlePostSuccess = () => {
         const { location, history } = this.props
-        const destination = (location.state || {}).from || '/dashboard'
+        const destination = (location.state || {}).from || '/dashboard/members'
         history.push(destination)
     }
 
     render() {
         return (
             <section className="dashboard__delete-member">
-                <DeleteMemberForm handleSubmit={this.handleSubmit} handleInputChange={this.handleInputChange} error={this.state.error} />
+                <DeleteMemberForm handleSubmit={this.handleSubmit} handleInputChange={this.handleInputChange} handleDeleteConfirm={this.handleDeleteConfirm} deleteConfirm={this.state.deleteConfirm} error={this.state.error} />
             </section>
         )
     }

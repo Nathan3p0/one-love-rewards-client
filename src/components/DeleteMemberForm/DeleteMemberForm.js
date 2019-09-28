@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import './DeleteMemberForm.module.css'
 
 const DeleteMemberForm = (props) => {
     return (
@@ -11,7 +12,7 @@ const DeleteMemberForm = (props) => {
                 <input type="tel" id="customer-phone" name="phone_number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" onChange={props.handleInputChange}
                     placeholder="734-555-0909" required />
             </div>
-            <button type="submit" className="create-btn" >Delete User</button>
+            <button type="submit" className="delete-btn" >Delete User</button>
             <Link to='/dashboard'><button className="go-back-btn">Go Back</button></Link>
         </form>
     )
