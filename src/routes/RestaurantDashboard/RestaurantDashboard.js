@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import './RestaurantDashboard.css'
 import DashboardNav from '../../components/DashboardNav/DashboardNav'
 import { Route, Switch } from 'react-router-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import AddPoints from '../AddPoints/AddPoints'
 import EditRewards from '../EditRewards/EditRewards'
 import AddMember from '../AddMember/AddMember'
@@ -30,7 +31,7 @@ class RestaurantDashboard extends Component {
         return (
             <section className='dashboard'>
                 <div>
-                    {pageWidth < 800 ? <button onClick={this.toggleNavigation} className='dashboard__menu-title'> Kingston Kitchen</button> :
+                    {pageWidth < 800 ? <button onClick={this.toggleNavigation} className='dashboard__menu-title'> Kingston Kitchen <FontAwesomeIcon icon='bars' /></button> :
                         <p className='dashboard__menu-title'> Kingston Kitchen</p>}
                     {(this.state.navOpen && <DashboardNav toggleNav={this.toggleNavigation} handleLogout={this.handleLogoutClick} />) || ((pageWidth > 800) && <DashboardNav handleLogout={this.handleLogoutClick} />)}
                 </div>

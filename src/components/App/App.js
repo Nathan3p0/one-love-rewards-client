@@ -1,12 +1,16 @@
 import React from 'react';
 import './App.css';
 import { Switch } from 'react-router-dom'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faBars, faDrumstickBite, faReceipt, faMoneyBillAlt } from '@fortawesome/free-solid-svg-icons'
 import Header from '../Header/Header'
 import LandingPage from '../../routes/LandingPage/LandingPage'
 import RewardsDisplay from '../../routes/RewardsDisplay/RewardsDisplay'
 import RestaurantDashboard from '../../routes/RestaurantDashboard/RestaurantDashboard'
 import PrivateRoute from '../Utils/PrivateRoute'
 import PublicOnlyRoute from '../Utils/PublicOnlyRoute'
+
+library.add(faBars, faDrumstickBite, faReceipt, faMoneyBillAlt)
 
 function App() {
   return (
