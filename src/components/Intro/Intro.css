@@ -4,10 +4,15 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    height: 100%;
+    padding: 1rem;
 }
 
 .main__content-intro--logo {
-    max-width: 26rem;
+    max-width: 100%;
+}
+.main__content-intro--container {
+    justify-self: center;
 }
 
 .main__content-intro--container h2{
@@ -56,13 +61,15 @@ button.btn:active {
 
 
 @media screen and (max-width: 800px) {
-    .main__content-intro {
-
-        align-items: flex-start;
-        height: 100vh;
+    .main__content-intro--logo {
+        max-width: 80%;
     }
 
-    .main__content-intro--logo {
-        max-width: 25rem;
+    .customer__btn {
+        margin: .5rem;
+    }
+
+    .business__btn {
+        margin: .5rem;
     }
 }

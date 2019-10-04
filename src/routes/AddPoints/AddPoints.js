@@ -29,7 +29,7 @@ class AddPoints extends Component {
     }
 
     calculateUpdatedPoints = () => {
-        const {points_total, purchase_total} = this.state
+        const { points_total, purchase_total } = this.state
         console.log(this.state.updated_points)
         return Math.floor(((purchase_total) * 2) + points_total)
     }
@@ -52,7 +52,7 @@ class AddPoints extends Component {
 
     handlePointsSubmit = e => {
         e.preventDefault()
-        const {updated_points, customer_id, point_id } = this.state
+        const { updated_points, customer_id, point_id } = this.state
         const newPoints = {
             point_id: point_id,
             points_total: updated_points,
@@ -67,17 +67,21 @@ class AddPoints extends Component {
                 })
             })
             .catch(res => {
-                this.setState({error: res.error})
+                this.setState({ error: res.error })
             })
     }
 
     fetchCustomerPointsInfo = (id) => {
         DashboardApiService.getCustomerPointsInfo(id)
             .then(res => {
+                console.log(res)
                 this.setState({
                     ...res,
                     updated_points: res.points_total
                 })
+            })
+            .catch(res => {
+                this.setState({ error: res.error })
             })
     }
 
@@ -88,22 +92,25 @@ class AddPoints extends Component {
                     rewards: [...res]
                 })
             })
+            .catch(res => {
+                this.setState({ error: res.error })
+            })
     }
 
     onClickReward = (option, e) => {
-        if(this.state.updated_points < option.pointsRequired) {
+        if (this.state.updated_points < option.pointsRequired) {
             return this.setState({
                 reward_selected: option.discount,
                 points_redeemed: option.pointsRequired,
                 updated_points: this.state.updated_points
             })
         } else {
-        this.setState({
-            reward_selected: option.discount,
-            points_redeemed: option.pointsRequired,
-            updated_points: this.state.updated_points - option.pointsRequired
-        })
-    }
+            this.setState({
+                reward_selected: option.discount,
+                points_redeemed: option.pointsRequired,
+                updated_points: this.state.updated_points - option.pointsRequired
+            })
+        }
     }
 
 
@@ -113,21 +120,21 @@ class AddPoints extends Component {
                 <Switch>
                     <Route exact path={'/dashboard/add-points'} render={() => <CustomerLookupForm phone={this.state.phone_number} handleInputChange={this.handleInputChange} handlePhoneSubmit={this.handlePhoneSubmit} error={this.state.error} />} />
                     <Route path={'/dashboard/add-points/:id'} render={(renderProps) => <AddPointsForm fetchCustomerPointsInfo={this.fetchCustomerPointsInfo}
-                    points={this.state.points_total}
-                    id={renderProps.match.params.id}
-                    handleInputChange={this.handleInputChange}
-                    purchase={this.state.purchase_total}
-                    updated={this.state.updated_points}
-                    name={this.state.name}
-                    email={this.state.email}
-                    phone={this.state.phone_number}
-                    handlePointsSubmit={this.handlePointsSubmit}
-                    fetchRewards={this.fetchRewards}
-                    rewards={this.state.rewards}
-                    error={this.state.error}
-                    onClickReward={this.onClickReward}
-                    selected={this.state.reward_selected} />}
-                     />
+                        points={this.state.points_total}
+                        id={renderProps.match.params.id}
+                        handleInputChange={this.handleInputChange}
+                        purchase={this.state.purchase_total}
+                        updated={this.state.updated_points}
+                        name={this.state.name}
+                        email={this.state.email}
+                        phone={this.state.phone_number}
+                        handlePointsSubmit={this.handlePointsSubmit}
+                        fetchRewards={this.fetchRewards}
+                        rewards={this.state.rewards}
+                        error={this.state.error}
+                        onClickReward={this.onClickReward}
+                        selected={this.state.reward_selected} />}
+                    />
                 </Switch>
             </section>
         )

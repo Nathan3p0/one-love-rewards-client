@@ -3,26 +3,9 @@ import './RewardsList.css'
 import RewardsListItem from '../RewardsListItem/RewardsListItem'
 
 const RewardsList = (props) => {
-    const rewardsOptions = [
-        {
-            points: 100,
-            discount: '$5 off your purchase'
-        },
-        {
-            points: 250,
-            discount: '$10 off your purchase'
-        },
-        {
-            points: 500,
-            discount: '$25 off your purchase'
-        }, {
-            points: 1000,
-            discount: '$50 off your purchase'
-        }
-    ]
 
-    const rewardsItems = rewardsOptions.map((item, i) =>
-        <RewardsListItem key={i} pointsRequired={item.points} discount={item.discount} />
+    const rewardsItems = props.rewards.map((item, i) =>
+        <RewardsListItem key={i} pointsRequired={item.points_required} points={props.points} discount={item.discount} button={props.button} />
     )
 
     return (

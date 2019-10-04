@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import './DeleteMemberForm.module.css'
 
 const DeleteMemberForm = (props) => {
@@ -13,7 +12,6 @@ const DeleteMemberForm = (props) => {
                     placeholder="734-555-0909" required />
             </div>
             <button type="submit" className="delete-btn" >Delete User</button>
-            <Link to='/dashboard'><button className="go-back-btn">Go Back</button></Link>
         </form>
     )
 }

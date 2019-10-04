@@ -1,7 +1,6 @@
 .main__content {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    height: 95vh;
     background-color: #FDFFFC;
 }
 

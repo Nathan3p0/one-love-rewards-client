@@ -3,6 +3,7 @@ import largeLogo from './images/large-logo.png'
 import './Intro.css'
 
 const Intro = (props) => {
+    console.log(window.innerWidth)
     return (
         <section className="main__content-intro">
             <div className="main__content-intro--container">

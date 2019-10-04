@@ -4,19 +4,21 @@ import RewardsListItem from '../RewardsListItem/RewardsListItem'
 
 class AddPointsForm extends Component {
 
+    static defaultProps = {
+        rewards: []
+    }
+
     componentDidMount() {
         this.props.fetchCustomerPointsInfo(this.props.id)
+        console.log(this.props.id)
         this.props.fetchRewards()
     }
 
     render() {
-        let rewardsItems
-        if (this.props.rewards === undefined) {
-            rewardsItems = []
-        } else {
-            rewardsItems = this.props.rewards.map((item, i) =>
-        <RewardsListItem key={i} currentPoints={this.props.points} pointsRequired={item.points_required} discount={item.discount} onClickReward={this.props.onClickReward} updated={this.props.updated} />
-            )}
+        const rewardsItems = this.props.rewards.map((item, i) =>
+            <RewardsListItem key={i} button={true} currentPoints={this.props.points} pointsRequired={item.points_required} discount={item.discount} onClickReward={this.props.onClickReward} updated={this.props.updated} />
+        )
+
         return (
             <section className={styles.points__update}>
                 <div className={styles.points__update_totals}>

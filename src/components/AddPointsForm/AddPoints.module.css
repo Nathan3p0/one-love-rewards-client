@@ -57,18 +57,6 @@
     margin-top: 1.5rem;
 }
 
-button {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-    outline: none;
-    border: 0;
-    vertical-align: middle;
-    text-decoration: none;
-    font-size: inherit;
-    font-family: inherit;
-}
-
 button.done_btn {
     width: 15rem;
     margin-top: 2rem;
@@ -88,6 +76,7 @@ button.done_btn:active {
 
 .rewards_list {
     text-align: center;
+    max-width: 100%;
 }
 
 .rewards_list ul {
@@ -95,4 +84,36 @@ button.done_btn:active {
 
 .rewards_list h3 {
     font-size: 1.5rem;
+}
+
+@media screen and (max-width: 800px) {
+    .points__update_totals {
+        grid-template-columns: 1fr;
+    }
+
+    .points__update_formcontainer {
+        margin-top: 1rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        /* width: 50rem; */
+        grid-gap: 1rem;
+    }
+
+    .points__update_purchase,
+    .points__update_current,
+    .points__update_new {
+    height: 10rem;
+    width: 15.6rem;
+    background-color: rgb(75, 89, 102);
+    box-shadow: 1px 2px 3px #000;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+    color: #fff;
+}
+}
+
+@media screen and (max-width: 800px) {
+
 }

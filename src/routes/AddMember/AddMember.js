@@ -25,13 +25,12 @@ class AddMember extends Component {
             .then(res => {
 
                 const newCustomerPoints = {
-                    points_total: 0,
                     customer_id: res.id
                 }
 
                 DashboardApiService.createInitialPoints(newCustomerPoints)
                     .then(res => {
-                        this.props.history.push(`/dashboard/members`);
+                        this.props.history.push(`/dashboard/add-points/${res.id}`);
                     })
             })
             .catch(res => {

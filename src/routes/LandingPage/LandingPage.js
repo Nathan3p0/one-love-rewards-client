@@ -19,11 +19,10 @@ class LandingPage extends Component {
         history.push(destination)
     }
 
-    handleSearchSuccess = () => {
-        const { location, history } = this.props
-        const destination = (location.state || {}).from || '/rewards'
-
-        history.push(destination)
+    handleSearchSuccess = (res) => {
+        console.log(res)
+        const { history } = this.props
+        history.push(`/rewards/${res}`)
     }
 
 

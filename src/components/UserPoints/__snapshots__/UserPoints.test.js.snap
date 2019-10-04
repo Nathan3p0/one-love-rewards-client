@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card Component Rendering Tests renders to UI as expected 1`] = `
+<section
+  className="user__content-info--graph"
+>
+  <h3>
+    Current Point Status
+  </h3>
+  <div
+    className="c100 pNaN big dark"
+  >
+    <span>
+      NaN
+      %
+    </span>
+    <div
+      className="slice"
+    >
+      <div
+        className="bar"
+      />
+      <div
+        className="fill"
+      />
+    </div>
+  </div>
+  <div
+    className="points-total"
+  >
+    <p>
+      pts
+    </p>
+  </div>
+</section>
+`;
+
+exports[`Card Component Rendering Tests renders to UI as expected with PROPS 1`] = `
+<section
+  className="user__content-info--graph"
+>
+  <h3>
+    Current Point Status
+  </h3>
+  <div
+    className="c100 p5000 big dark"
+  >
+    <span>
+      5000
+      %
+    </span>
+    <div
+      className="slice"
+    >
+      <div
+        className="bar"
+      />
+      <div
+        className="fill"
+      />
+    </div>
+  </div>
+  <div
+    className="points-total"
+  >
+    <p>
+      12
+      pts
+    </p>
+  </div>
+</section>
+`;

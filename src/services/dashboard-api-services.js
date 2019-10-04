@@ -3,7 +3,7 @@ import TokenService from '../services/token-service'
 
 const DashboardApiService = {
     getAllCustomers() {
-        return fetch(`http://localhost:8000/api/dashboard/members`, {
+        return fetch(`${config.API_ENDPOINT}/dashboard/members`, {
             headers: {
                 'Authorization': `bearer ${TokenService.getAuthToken()}`
             }
@@ -13,7 +13,7 @@ const DashboardApiService = {
             ))
     },
     getCustomerInfoByPhone(phone) {
-        return fetch(`http://localhost:8000/api/dashboard/members/${phone}`, {
+        return fetch(`${config.API_ENDPOINT}/dashboard/members/${phone}`, {
             method: 'GET',
             headers: {
                 'Authorization': `bearer ${TokenService.getAuthToken()}`
@@ -24,7 +24,7 @@ const DashboardApiService = {
             ))
     },
     createNewCustomer(newCustomer) {
-        return fetch(`http://localhost:8000/api/dashboard/members`, {
+        return fetch(`${config.API_ENDPOINT}/dashboard/members`, {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',
@@ -37,7 +37,7 @@ const DashboardApiService = {
             ))
     },
     getCustomerPointsInfo(id) {
-        return fetch(`http://localhost:8000/api/dashboard/members/points/${id}`, {
+        return fetch(`${config.API_ENDPOINT}/dashboard/members/points/${id}`, {
             headers: {
                 'Authorization': `bearer ${TokenService.getAuthToken()}`
             }
@@ -48,7 +48,7 @@ const DashboardApiService = {
 
     },
     addCustomerPoints(points, id) {
-        return fetch(`http://localhost:8000/api/dashboard/members/points/${id}`, {
+        return fetch(`${config.API_ENDPOINT}/dashboard/members/points/`, {
             method: 'PATCH',
             headers: {
                 'content-type': 'application/json',
@@ -61,7 +61,7 @@ const DashboardApiService = {
             ))
     },
     addCustomerPurchase(total, id) {
-        return fetch(`http://localhost:8000/api/dashboard/members/purchases/${id}`, {
+        return fetch(`${config.API_ENDPOINT}/dashboard/members/purchases/${id}`, {
             method: 'POST',
             header: {
                 'content-type': 'application/json',
@@ -74,7 +74,7 @@ const DashboardApiService = {
             ))
     },
     deleteCustomer(phone_number) {
-        return fetch(`http://localhost:8000/api/dashboard/members/${phone_number}`, {
+        return fetch(`${config.API_ENDPOINT}/dashboard/members/${phone_number}`, {
             method: 'DELETE',
             headers: {
                 'Authorization': `bearer ${TokenService.getAuthToken()}`
@@ -85,7 +85,7 @@ const DashboardApiService = {
             ))
     },
     createInitialPoints(newCustomer) {
-        return fetch(`http://localhost:8000/api/dashboard/members/points`, {
+        return fetch(`${config.API_ENDPOINT}/dashboard/members/points`, {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',
@@ -98,7 +98,7 @@ const DashboardApiService = {
             ))
     },
     getRewards() {
-        return fetch(`http://localhost:8000/api/dashboard/rewards`)
+        return fetch(`${config.API_ENDPOINT}/dashboard/rewards`)
             .then(res => (
                 (!res.ok) ? res.json().then(e => Promise.reject(e)) : res.json()
             ))

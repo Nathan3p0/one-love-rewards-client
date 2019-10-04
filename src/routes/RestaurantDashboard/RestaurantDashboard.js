@@ -2,27 +2,40 @@ import React, { Component } from 'react'
 import './RestaurantDashboard.css'
 import DashboardNav from '../../components/DashboardNav/DashboardNav'
 import { Route, Switch } from 'react-router-dom'
-import RedeemPoints from '../RedeemPoints/RedeemPoints'
 import AddPoints from '../AddPoints/AddPoints'
 import EditRewards from '../EditRewards/EditRewards'
 import AddMember from '../AddMember/AddMember'
 import AllMembers from '../AllMembers/AllMembers'
 import DeleteMember from '../DeleteMember/DeleteMember'
+import TokenService from '../../services/token-service'
 
 class RestaurantDashboard extends Component {
     state = {
-        members: []
+        members: [],
+        navOpen: false
     }
+
+    handleLogoutClick = () => {
+        TokenService.clearAuthToken()
+    }
+
+    toggleNavigation = () => {
+        this.setState({
+            navOpen: !this.state.navOpen
+        })
+    }
+
     render() {
+        const pageWidth = window.innerWidth
         return (
             <section className='dashboard'>
                 <div>
-                    <p className='dashboard__menu-title'>Kingston Kitchen</p>
-                    <DashboardNav />
+                    {pageWidth < 800 ? <button onClick={this.toggleNavigation} className='dashboard__menu-title'> Kingston Kitchen</button> :
+                        <p className='dashboard__menu-title'> Kingston Kitchen</p>}
+                    {(this.state.navOpen && <DashboardNav toggleNav={this.toggleNavigation} handleLogout={this.handleLogoutClick} />) || ((pageWidth > 800) && <DashboardNav handleLogout={this.handleLogoutClick} />)}
                 </div>
                 <div>
                     <Switch>
-                        <Route path={'/dashboard/redeem'} component={RedeemPoints} />
                         <Route path={'/dashboard/add-points'} component={AddPoints} />
                         <Route path={'/dashboard/edit-rewards'} component={EditRewards} />
                         <Route path={'/dashboard/add-member'} component={AddMember} />
