@@ -12,22 +12,22 @@ const Description = () => {
                 <div className="main__content-description--info-item">
                     <FontAwesomeIcon icon='receipt' size="6x" className="receipt" />
                     <h3>Dine</h3>
-                    <p>Getting started is easy</p>
+                    <p className="info__item-description--heading">Getting started is easy</p>
                     <p>Whether you visit once a month or every day, we’re always glad to see you. And we want you to
                         enjoy Rewards. Just sign up in store and you'll keep earning rewards on every purchase.</p>
                 </div>
                 <div className="main__content-description--info-item">
-                    <FontAwesomeIcon icon='drumstick-bite' size="6x" />
+                    <FontAwesomeIcon icon='drumstick-bite' className="chicken" size="6x" />
                     <h3>Eat</h3>
-                    <p>Earn 2 points for every $1</p>
+                    <p className="info__item-description--heading">Earn 2 points for every $1</p>
                     <p>For every $1 you spend on food and drinks you'll earn 2 points. There is no limit on how many
                         points
                         you can earn.</p>
                 </div>
                 <div className="main__content-description--info-item">
-                    <FontAwesomeIcon icon='money-bill-alt' size="6x" />
+                    <FontAwesomeIcon icon='money-bill-alt' className="money" size="6x" />
                     <h3>Get Rewarded</h3>
-                    <p>Use points for free food & more</p>
+                    <p className="info__item-description--heading">Use points for free food & more</p>
                     <p>Spend your points on any in restaurant items.</p>
                 </div>
             </div>

@@ -3,7 +3,7 @@
 .points__update_new {
     height: 10rem;
     width: 15.6rem;
-    background-color: rgb(75, 89, 102);
+    background-color: #429398;
     box-shadow: 1px 2px 3px #000;
     display: flex;
     justify-content: center;
@@ -36,11 +36,27 @@
 }
 
 .points__update_formcontainer {
-    margin-top: 1rem;
+    margin-top: 2rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    width: 50rem;
+    width: 100%;
     grid-gap: 1rem;
+}
+
+.points__update_formcontainer h4 {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    color: #6DDB1F;
+    font-weight: 700;
+    text-shadow: 1px 1px 3px black;
+}
+
+.points__update_formcontainer p {
+    font-size: 1.2rem;
+    margin: .5rem;
+    color: #FDFFFC;
+    font-weight: 700;
+    text-shadow: 1px 1px 3px black;
 }
 
 .points__update_form input[type="number"] {
@@ -55,6 +71,10 @@
 
 .points__update_form {
     margin-top: 1.5rem;
+}
+
+.points__update_form label {
+    color: #FDFFFC;
 }
 
 button.done_btn {
@@ -80,10 +100,13 @@ button.done_btn:active {
 }
 
 .rewards_list ul {
-    list-style-type: none;}
+    list-style-type: none;
+}
 
 .rewards_list h3 {
-    font-size: 1.5rem;
+    /* margin-top: 2rem; */
+    font-size: 1.7rem;
+    color: #FDFFFC;
 }
 
 @media screen and (max-width: 800px) {

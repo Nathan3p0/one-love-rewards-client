@@ -10,10 +10,13 @@
     align-self: center;
 }
 
+.form__input-container {
+    width: 75%;
+}
+
 .businessLoginForm {
-    padding: 5rem;
     border-radius: 1rem;
-    width: 100%;
+    width: 40vw;
     height: 25vh;
     display: flex;
     justify-content: center;
@@ -67,5 +70,16 @@ button.biz-btn:active {
 @media screen and (max-width: 800px) {
     .main__content-business_login {
         margin-top: 5rem;
+    }
+
+    .businessLoginForm {
+        padding: 0;
+        border-radius: 1rem;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
 }

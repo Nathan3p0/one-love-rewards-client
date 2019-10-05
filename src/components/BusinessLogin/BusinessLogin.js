@@ -42,12 +42,12 @@ class BusinessLogin extends Component {
                         <div role='alert'>
                             {error && <p className='red'>{error}</p>}
                         </div>
-                        <div>
+                        <div className="form__input-container">
                             <label htmlFor="username">Username:</label>
                             <br />
                             <input type='text' id="username" name="username" placeholder="username" required />
                         </div>
-                        <div>
+                        <div className="form__input-container">
                             <label htmlFor="password">Password:</label>
                             <br />
                             <input type="password" id="password" name="password" placeholder="password" required />

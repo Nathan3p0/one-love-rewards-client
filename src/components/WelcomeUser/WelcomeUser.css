@@ -1,9 +1,11 @@
 .user__content-info--welcome {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background: #ccc;
+    background: slategrey;
     width: 40rem;
     margin: 2rem 0;
+    border: 2px solid rgba(255, 255, 255, 0.322);
+    box-shadow: 1px 3px 2px rgb(39, 39, 39);
   }
 
   .user__content-info--welcome-initial {
@@ -21,6 +23,14 @@
     margin-left: 1rem;
   }
 
+  .user__content-info--welcome-user p {
+    font-size: 1.5rem;
+    margin: .5rem;
+    color: #FDFFFC;
+    /* font-weight: 700; */
+    text-shadow: 1px 1px 5px rgb(87, 87, 87);
+  }
+
   .user__content-info--welcome-circle {
     display: inline-block;
     height: 3rem;
@@ -28,8 +38,20 @@
     line-height: 3rem;
     -moz-border-radius: 50%;
     border-radius: 50%;
-    background-color: black;
-    color: white;
+    background-color: #6DDB1F;
+    color: #FDFFFC;
     text-align: center;
     font-size: 2em;
+    box-shadow: 0px 1px 6px rgba(39, 39, 39, 0.76);
+  }
+
+  @media screen and (max-width: 800px) {
+    .user__content-info--welcome {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      background: #ccc;
+      width: 100%;
+      margin: 2rem 0;
+    }
+
   }

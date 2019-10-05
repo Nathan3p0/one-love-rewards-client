@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import './AddMemberForm.css'
 
 const AddMemberForm = (props) => {
     return (
@@ -25,7 +25,6 @@ const AddMemberForm = (props) => {
                     placeholder="734-555-0909" required />
             </div>
             <button type="submit" className="create-btn" >Create User</button>
-            <Link to='/dashboard'><button className="go-back-btn">Go Back</button></Link>
         </form>
     )
 }

@@ -15,7 +15,7 @@
 .dashboard__add-member--form {
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
     flex-direction: column;
 }
 
@@ -29,17 +29,6 @@ button {
     text-decoration: none;
     font-size: inherit;
     font-family: inherit;
-}
-
-button.go-back-btn {
-    width: 15rem;
-    margin-top: 1rem;
-    transition: all 0.5s cubic-bezier(0.65, -0.25, 0.25, 1.95);
-    font-weight: 900;
-    color: #fff;
-    padding: 1.25rem 2rem;
-    background: #202121;
-    text-transform: uppercase;
 }
 
 button.create-btn {

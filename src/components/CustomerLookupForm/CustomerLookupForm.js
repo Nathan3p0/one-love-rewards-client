@@ -1,4 +1,5 @@
 import React from 'react'
+import './CustomerLookupForm.css'
 
 const CustomerLookupForm = (props) => {
     return (

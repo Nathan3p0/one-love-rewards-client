@@ -2,10 +2,9 @@
     background: #CF5C36;
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     text-align: center;
-    height: 100%;
-    padding: 1rem;
+    height: 100vh;
 }
 
 .main__content-intro--logo {
@@ -13,6 +12,8 @@
 }
 .main__content-intro--container {
     justify-self: center;
+    padding-bottom: 1rem;
+    padding: 1rem;
 }
 
 .main__content-intro--container h2{
@@ -36,6 +37,7 @@ button {
 }
 
 button.btn {
+    width: 14rem;
     transition: all 0.5s cubic-bezier(0.65, -0.25, 0.25, 1.95);
     font-weight: 900;
     color: #202121;

@@ -1,6 +1,6 @@
 .main__header {
     display: flex;
-    background-color: #87B38D;
+    background-color: #47A94B;
     height: 2.5rem;
     align-items: center;
 }
@@ -8,6 +8,7 @@
 .main__header h1 {
     color: #FDFFFC;
     margin-left: 1rem;
+    font-size: 1.5rem;
 }
 
 .main__header a {

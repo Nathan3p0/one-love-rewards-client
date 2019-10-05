@@ -41,18 +41,6 @@ label {
     margin: 2rem 0;
 }
 
-button {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-    outline: none;
-    border: 0;
-    vertical-align: middle;
-    text-decoration: none;
-    font-size: inherit;
-    font-family: inherit;
-}
-
 button.cust-btn {
     width: 15rem;
     margin-top: 2rem;
@@ -68,4 +56,28 @@ button.cust-btn:hover,
 button.cust-btn:focus,
 button.cust-btn:active {
     letter-spacing: 0.125rem;
+}
+
+@media screen and (max-width: 800px) {
+    .main__content-user_lookup {
+        margin-top: 0;
+        padding-bottom: 1rem;
+    }
+
+    .main__content-user_lookup h2 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .customerLoginForm {
+        padding: 1rem;
+        height: 100%;
+    }
+
+    button.cust-btn {
+        width: 100%;
+        margin: 0;
+        color: #202121;
+        padding: 1.25rem 2rem;
+    }
 }

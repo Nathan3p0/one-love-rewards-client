@@ -7,7 +7,7 @@ const UserPoints = (props) => {
 
     return (
         <section className="user__content-info--graph">
-            <h3>Current Point Status</h3>
+            <h3>Current Point Status:</h3>
             <div className={graphStyle}>
                 <span>{Math.floor(props.percentage * 100)}%</span>
                 <div className="slice">
@@ -18,6 +18,7 @@ const UserPoints = (props) => {
             <div className="points-total">
                 <p>{props.points}pts</p>
             </div>
+            <p>**Percentage to your next reward**</p>
         </section>
     );
 }
