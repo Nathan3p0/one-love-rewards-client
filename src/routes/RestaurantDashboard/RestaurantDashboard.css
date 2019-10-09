@@ -1,7 +1,6 @@
 .dashboard {
     display: grid;
-    grid-template-columns: 19rem 1fr;
-    height: 100vh;
+    grid-template-columns: 1fr;
     background-color: #253034;
 }
 

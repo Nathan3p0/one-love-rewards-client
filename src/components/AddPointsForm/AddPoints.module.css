@@ -1,3 +1,8 @@
+.points__update {
+    width: 90%;
+    height: 100vh;
+}
+
 .points__update_purchase,
 .points__update_current,
 .points__update_new {
@@ -31,15 +36,15 @@
 .points__update_totals {
     margin-top: 1rem;
     display: grid;
-    grid-gap: 1rem;
+    /* grid-gap: 1rem; */
     grid-template-columns: 1fr 1fr 1fr;
 }
 
 .points__update_formcontainer {
-    margin-top: 2rem;
+    margin-top: 1rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    width: 100%;
+    /* width: 50rem; */
     grid-gap: 1rem;
 }
 
@@ -59,7 +64,7 @@
     text-shadow: 1px 1px 3px black;
 }
 
-.points__update_form input[type="number"] {
+.points__update_form input[type="text"] {
     width: 100%;
     border: .2rem solid rgba(0, 0, 0, 0.3);
     border-radius: .3rem;
@@ -109,34 +114,68 @@ button.done_btn:active {
     color: #FDFFFC;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1200px) {
+    .points__update {
+        width: 90%;
+    }
+
     .points__update_totals {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
     .points__update_formcontainer {
         margin-top: 1rem;
         display: grid;
-        grid-template-columns: 1fr;
-        /* width: 50rem; */
+        grid-template-columns: 1fr 1fr;
         grid-gap: 1rem;
     }
 
     .points__update_purchase,
     .points__update_current,
     .points__update_new {
-    height: 10rem;
-    width: 15.6rem;
+    height: 8rem;
+    width: 14rem;
     background-color: rgb(75, 89, 102);
     box-shadow: 1px 2px 3px #000;
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; */
     color: #fff;
 }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 720px) {
+    .points__update_totals {
+        grid-template-columns: 1fr;
+    }
+    .points__update_purchase,
+    .points__update_current,
+    .points__update_new {
+    width: 100%;
+    }
 
+    .points__update_formcontainer {
+        grid-template-columns: 1fr;
+    }
+
+    .points__update {
+        background: #253034;
+        height: 100%;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .points__update {
+        width: 100%;
+        padding-right: 0 1rem;
+    }
+
+    .points__update_formcontainer {
+        padding: 1rem;
+    }
+
+    .rewards_list ul {
+        padding-left: 0;
+    }
+
+    .points__update_totals { padding: 1rem;
+    }
 }

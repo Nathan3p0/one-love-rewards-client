@@ -11,7 +11,7 @@ const CustomerLookupForm = (props) => {
             <div>
                 <label htmlFor="phone">Enter Customer Phone Number:</label>
                 <br />
-                <input type="tel" id="phone" name="phone_number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                <input type="text" id="phone" name="phone_number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                     placeholder="Phone Number" onChange={props.handleInputChange} value={props.phone} required />
             </div>
             <div>

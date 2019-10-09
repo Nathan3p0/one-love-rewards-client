@@ -31,9 +31,8 @@ class RestaurantDashboard extends Component {
         return (
             <section className='dashboard'>
                 <div>
-                    {pageWidth < 800 ? <button onClick={this.toggleNavigation} className='dashboard__menu-title'> Kingston Kitchen <FontAwesomeIcon icon='bars' /></button> :
-                        <p className='dashboard__menu-title'> Kingston Kitchen</p>}
-                    {(this.state.navOpen && <DashboardNav toggleNav={this.toggleNavigation} handleLogout={this.handleLogoutClick} />) || ((pageWidth > 800) && <DashboardNav handleLogout={this.handleLogoutClick} />)}
+                    <button onClick={this.toggleNavigation} className='dashboard__menu-title'> Kingston Kitchen <FontAwesomeIcon icon='bars' /></button>
+                    {(this.state.navOpen && <DashboardNav toggleNav={this.toggleNavigation} handleLogout={this.handleLogoutClick} />)}
                 </div>
                 <div>
                     <Switch>

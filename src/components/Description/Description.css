@@ -1,6 +1,6 @@
 .main__content-description {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-content: center;
   flex-direction: column;
 }
