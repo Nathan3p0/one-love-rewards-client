@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom'
 import renderer from 'react-test-renderer'
 import WelcomeUser from './WelcomeUser'
 
-describe('Rewards List Component Rendering Tests', () => {
+describe('Welcome user Component Rendering Tests', () => {
 
     it('renders without crashing', () => {
         const div = document.createElement('div')

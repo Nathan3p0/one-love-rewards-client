@@ -4,6 +4,11 @@ import AuthApiService from '../../services/auth-api-service'
 import TokenService from '../../services/token-service'
 
 class BusinessLogin extends Component {
+
+    static defaultProps = {
+        onLoginSuccess: () => { }
+    }
+
     state = {
         error: null
     }

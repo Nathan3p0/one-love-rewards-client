@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header Component Rendering Tests renders to UI as expected 1`] = `
+<header
+  className="main__header"
+>
+  <a
+    href="/"
+    onClick={[Function]}
+  >
+    <h1>
+      ONE LOVE REWARDS
+    </h1>
+  </a>
+</header>
+`;
+
+exports[`Member List Item Component Rendering Tests renders to UI as expected 1`] = `
+<header
+  className="main__header"
+>
+  <a
+    href="/"
+    onClick={[Function]}
+  >
+    <h1>
+      ONE LOVE REWARDS
+    </h1>
+  </a>
+</header>
+`;

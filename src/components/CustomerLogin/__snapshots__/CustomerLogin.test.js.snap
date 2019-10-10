@@ -1,5 +1,99 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Customer Login Component Rendering Tests renders to UI as expected 1`] = `
+<section
+  className="main__content-user_lookup"
+>
+  <div
+    className="cover"
+  >
+    <form
+      className="customerLoginForm"
+      onSubmit={[Function]}
+    >
+      <h2>
+        View What Rewards You've Earned
+      </h2>
+      <div
+        role="alert"
+      />
+      <div>
+        <label
+          htmlFor="phone"
+        >
+          Enter your phone number:
+        </label>
+        <input
+          id="phone"
+          name="phone_number"
+          onChange={[Function]}
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+          placeholder="734-555-0505"
+          required={true}
+          type="text"
+          value=""
+        />
+      </div>
+      <div>
+        <button
+          className="cust-btn"
+          type="submit"
+        >
+          Submit
+        </button>
+      </div>
+    </form>
+  </div>
+</section>
+`;
+
+exports[`Customer Login Component Rendering Tests renders to UI as expected with PROPS 1`] = `
+<section
+  className="main__content-user_lookup"
+>
+  <div
+    className="cover"
+  >
+    <form
+      className="customerLoginForm"
+      onSubmit={[Function]}
+    >
+      <h2>
+        View What Rewards You've Earned
+      </h2>
+      <div
+        role="alert"
+      />
+      <div>
+        <label
+          htmlFor="phone"
+        >
+          Enter your phone number:
+        </label>
+        <input
+          id="phone"
+          name="phone_number"
+          onChange={[Function]}
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+          placeholder="734-555-0505"
+          required={true}
+          type="text"
+          value=""
+        />
+      </div>
+      <div>
+        <button
+          className="cust-btn"
+          type="submit"
+        >
+          Submit
+        </button>
+      </div>
+    </form>
+  </div>
+</section>
+`;
+
 exports[`Member List Item Component Rendering Tests renders to UI as expected 1`] = `
 <section
   className="main__content-user_lookup"

@@ -4,7 +4,7 @@ import renderer from 'react-test-renderer'
 import DashboardNav from './DashboardNav'
 import { BrowserRouter } from 'react-router-dom'
 
-describe('Member List Item Component Rendering Tests', () => {
+describe('Dashboard Nav Component Rendering Tests', () => {
 
     it('renders without crashing', () => {
         const div = document.createElement('div')

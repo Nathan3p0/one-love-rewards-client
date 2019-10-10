@@ -1,0 +1,241 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Business Login Component Rendering Tests renders to UI as expected 1`] = `
+<section
+  className="main__content-business_login"
+>
+  <div>
+    <form
+      className="businessLoginForm"
+      onSubmit={[Function]}
+    >
+      <h2>
+        Business Owner Login
+      </h2>
+      <div
+        role="alert"
+      />
+      <div
+        className="form__input-container"
+      >
+        <label
+          htmlFor="username"
+        >
+          Username:
+        </label>
+        <br />
+        <input
+          id="username"
+          name="username"
+          placeholder="username"
+          required={true}
+          type="text"
+        />
+      </div>
+      <div
+        className="form__input-container"
+      >
+        <label
+          htmlFor="password"
+        >
+          Password:
+        </label>
+        <br />
+        <input
+          id="password"
+          name="password"
+          placeholder="password"
+          required={true}
+          type="password"
+        />
+      </div>
+      <button
+        className="biz-btn"
+        type="submit"
+      >
+        Submit
+      </button>
+    </form>
+  </div>
+</section>
+`;
+
+exports[`Business Login Component Rendering Tests renders to UI as expected with PROPS 1`] = `
+<section
+  className="main__content-business_login"
+>
+  <div>
+    <form
+      className="businessLoginForm"
+      onSubmit={[Function]}
+    >
+      <h2>
+        Business Owner Login
+      </h2>
+      <div
+        role="alert"
+      />
+      <div
+        className="form__input-container"
+      >
+        <label
+          htmlFor="username"
+        >
+          Username:
+        </label>
+        <br />
+        <input
+          id="username"
+          name="username"
+          placeholder="username"
+          required={true}
+          type="text"
+        />
+      </div>
+      <div
+        className="form__input-container"
+      >
+        <label
+          htmlFor="password"
+        >
+          Password:
+        </label>
+        <br />
+        <input
+          id="password"
+          name="password"
+          placeholder="password"
+          required={true}
+          type="password"
+        />
+      </div>
+      <button
+        className="biz-btn"
+        type="submit"
+      >
+        Submit
+      </button>
+    </form>
+  </div>
+</section>
+`;
+
+exports[`Member List Item Component Rendering Tests renders to UI as expected 1`] = `
+<section
+  className="main__content-business_login"
+>
+  <div>
+    <form
+      className="businessLoginForm"
+      onSubmit={[Function]}
+    >
+      <h2>
+        Business Owner Login
+      </h2>
+      <div
+        role="alert"
+      />
+      <div
+        className="form__input-container"
+      >
+        <label
+          htmlFor="username"
+        >
+          Username:
+        </label>
+        <br />
+        <input
+          id="username"
+          name="username"
+          placeholder="username"
+          required={true}
+          type="text"
+        />
+      </div>
+      <div
+        className="form__input-container"
+      >
+        <label
+          htmlFor="password"
+        >
+          Password:
+        </label>
+        <br />
+        <input
+          id="password"
+          name="password"
+          placeholder="password"
+          required={true}
+          type="password"
+        />
+      </div>
+      <button
+        className="biz-btn"
+        type="submit"
+      >
+        Submit
+      </button>
+    </form>
+  </div>
+</section>
+`;
+
+exports[`Member List Item Component Rendering Tests renders to UI as expected with PROPS 1`] = `
+<section
+  className="main__content-business_login"
+>
+  <div>
+    <form
+      className="businessLoginForm"
+      onSubmit={[Function]}
+    >
+      <h2>
+        Business Owner Login
+      </h2>
+      <div
+        role="alert"
+      />
+      <div
+        className="form__input-container"
+      >
+        <label
+          htmlFor="username"
+        >
+          Username:
+        </label>
+        <br />
+        <input
+          id="username"
+          name="username"
+          placeholder="username"
+          required={true}
+          type="text"
+        />
+      </div>
+      <div
+        className="form__input-container"
+      >
+        <label
+          htmlFor="password"
+        >
+          Password:
+        </label>
+        <br />
+        <input
+          id="password"
+          name="password"
+          placeholder="password"
+          required={true}
+          type="password"
+        />
+      </div>
+      <button
+        className="biz-btn"
+        type="submit"
+      >
+        Submit
+      </button>
+    </form>
+  </div>
+</section>
+`;
