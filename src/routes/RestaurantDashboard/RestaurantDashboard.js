@@ -27,7 +27,6 @@ class RestaurantDashboard extends Component {
     }
 
     render() {
-        const pageWidth = window.innerWidth
         return (
             <section className='dashboard'>
                 <div>

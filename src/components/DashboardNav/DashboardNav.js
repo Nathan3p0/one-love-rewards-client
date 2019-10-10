@@ -11,11 +11,11 @@ const DashboardNav = (props) => {
                         Add & Redeem Points
                     </NavLink>
                 </li>
-                <li>
+                {/* <li>
                     <NavLink activeClassName='is-active' to='/dashboard/edit-rewards' onClick={props.toggleNav}>
                         Edit Rewards
                     </NavLink>
-                </li>
+                </li> */}
                 <li>
                     <NavLink activeClassName='is-active' to='/dashboard/add-member' onClick={props.toggleNav}>
                         Add Member

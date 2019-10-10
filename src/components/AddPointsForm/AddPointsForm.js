@@ -10,7 +10,6 @@ class AddPointsForm extends Component {
 
     componentDidMount() {
         this.props.fetchCustomerPointsInfo(this.props.id)
-        console.log(this.props.id)
         this.props.fetchRewards()
     }
 
@@ -48,7 +47,7 @@ class AddPointsForm extends Component {
                             <label htmlFor="purchase-total">
                                 Purchase Total:
                             </label><br />
-                            <input type="number" id="purchase-total" name="purchase_total" value={this.props.purchase} onChange={this.props.handleInputChange} required /><br />
+                            <input type="text" id="purchase-total" name="purchase_total" value={this.props.purchase} onChange={this.props.handleInputChange} placeholder='Purchase Total' required /><br />
                             <button className={styles.done_btn} type="submit">Done</button>
                         </form>
                     </div>

@@ -27,7 +27,6 @@
     font-size: 1.5rem;
     margin: .5rem;
     color: #FDFFFC;
-    /* font-weight: 700; */
     text-shadow: 1px 1px 5px rgb(87, 87, 87);
   }
 
@@ -49,9 +48,17 @@
     .user__content-info--welcome {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      background: #ccc;
       width: 100%;
       margin: 2rem 0;
     }
 
+  }
+
+  @media screen and (max-width: 600px) {
+    .user__content-info--welcome-user p {
+      font-size: 1rem;
+      margin: .5rem;
+      color: #FDFFFC;
+      text-shadow: 1px 1px 5px rgb(87, 87, 87);
+    }
   }

@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import CustomerApiService from '../../services/customer-api-service'
-import CustomerContext from '../../contexts/CustomerContext'
 import './CustomerLogin.css'
 
 class CustomerLogin extends Component {
@@ -53,7 +52,7 @@ class CustomerLogin extends Component {
                         </div>
                         <div>
                             <label htmlFor="phone">Enter your phone number:</label>
-                            <input type="tel" id="phone" name="phone_number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                            <input type="text" id="phone" name="phone_number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                                 placeholder="734-555-0505" value={this.state.phone_number} onChange={this.handleInputChange} required />
                         </div>
                         <div>
@@ -65,7 +64,4 @@ class CustomerLogin extends Component {
         )
     }
 }
-
-CustomerLogin.contextType = CustomerContext
-
 export default CustomerLogin

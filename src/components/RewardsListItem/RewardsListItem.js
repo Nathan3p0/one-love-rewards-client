@@ -21,4 +21,13 @@ const RewardsListItem = (props) => {
     )
 }
 
+RewardsListItem.defaultProps = {
+    button: true,
+    currentPoints: 0,
+    pointsRequired: 0,
+    updated: 0,
+    discount: '',
+    onClickReward: () => { }
+}
+
 export default RewardsListItem

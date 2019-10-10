@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Rewards List Component Rendering Tests renders to UI as expected 1`] = `
+<li>
+  <div
+    className="user__content-rewards--item"
+  >
+    <button
+      className="user__content-rewards--points user__content-rewards--earned"
+      onClick={[Function]}
+    >
+      <p>
+        0
+        pts
+      </p>
+    </button>
+    <div
+      className="user__content-rewards--reward"
+    >
+      <p>
+        
+      </p>
+    </div>
+  </div>
+</li>
+`;
+
+exports[`Rewards List Component Rendering Tests renders to UI as expected with PROPS 1`] = `
+<li>
+  <div
+    className="user__content-rewards--item"
+  >
+    <button
+      className="user__content-rewards--points"
+      onClick={[Function]}
+    >
+      <p>
+        125
+        pts
+      </p>
+    </button>
+    <div
+      className="user__content-rewards--reward"
+    >
+      <p>
+        $25 Off
+      </p>
+    </div>
+  </div>
+</li>
+`;

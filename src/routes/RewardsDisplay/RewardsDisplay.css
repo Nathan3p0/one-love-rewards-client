@@ -10,7 +10,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 95vh;
-    /* padding: 1rem 2rem; */
   }
 
 .user__content-rewards {
@@ -29,11 +28,11 @@
 
   .user__content-rewards ul {
     list-style-type: none;
-    width: 75%;
+    width: 85%;
   }
 
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 1000px) {
     .user__content {
       display: grid;
       grid-template-columns: 1fr;
@@ -44,5 +43,9 @@
     .user__content-rewards ul {
       list-style-type: none;
       width: 100%;
+    }
+
+    .user__content-info {
+      border-right: none;
     }
   }

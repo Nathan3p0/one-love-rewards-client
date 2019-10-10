@@ -10,7 +10,7 @@ class AddPoints extends Component {
         id: null,
         phone_number: '',
         error: null,
-        purchase_total: 0,
+        purchase_total: '',
         updated_points: null,
         reward_selected: null,
         points_redeemed: null
@@ -21,17 +21,21 @@ class AddPoints extends Component {
         const value = target.value
         const name = target.name
 
-        this.setState((prevState) => ({
+        this.setState({
             [name]: value,
-            updated_points: (Math.floor(prevState.purchase_total * 2) + prevState.points_total)
-        }))
-
+            updated_points: this.calculateUpdatedPoints(value)
+        })
     }
 
-    calculateUpdatedPoints = () => {
-        const { points_total, purchase_total } = this.state
-        console.log(this.state.updated_points)
-        return Math.floor(((purchase_total) * 2) + points_total)
+
+    calculateUpdatedPoints = (value) => {
+        const parsedValue = parseFloat(value)
+        console.log(parsedValue)
+        if(!parsedValue) {
+            return this.state.points_total
+        } else {
+            return Math.floor((parsedValue * 2) + this.state.points_total)
+        }
     }
 
     handlePhoneSubmit = e => {
@@ -74,7 +78,6 @@ class AddPoints extends Component {
     fetchCustomerPointsInfo = (id) => {
         DashboardApiService.getCustomerPointsInfo(id)
             .then(res => {
-                console.log(res)
                 this.setState({
                     ...res,
                     updated_points: res.points_total
@@ -116,7 +119,7 @@ class AddPoints extends Component {
 
     render() {
         return (
-            <section className="dashboard__add-points">
+            <section className="dashboard__add-points" >
                 <Switch>
                     <Route exact path={'/dashboard/add-points'} render={() => <CustomerLookupForm phone={this.state.phone_number} handleInputChange={this.handleInputChange} handlePhoneSubmit={this.handlePhoneSubmit} error={this.state.error} />} />
                     <Route path={'/dashboard/add-points/:id'} render={(renderProps) => <AddPointsForm fetchCustomerPointsInfo={this.fetchCustomerPointsInfo}
