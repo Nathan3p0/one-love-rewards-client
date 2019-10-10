@@ -41,4 +41,9 @@ const DashboardNav = (props) => {
     )
 }
 
+DashboardNav.defaultProps = {
+    handleLogout: () => { },
+    toggleNav: () => { }
+}
+
 export default DashboardNav

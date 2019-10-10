@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Member List Item Component Rendering Tests renders to UI as expected 1`] = `
+<li
+  className="tableRow"
+>
+  <div
+    className="col col-1"
+    data-label="Created"
+  >
+    Invalid Date
+  </div>
+  <div
+    className="col col-2"
+    data-label="Customer Name"
+  />
+  <div
+    className="col col-3"
+    data-label="Customer Email"
+  />
+  <div
+    className="col col-4"
+    data-label="Customer Phone"
+  />
+</li>
+`;
+
+exports[`Member List Item Component Rendering Tests renders to UI as expected with PROPS 1`] = `
+<li
+  className="tableRow"
+>
+  <div
+    className="col col-1"
+    data-label="Created"
+  >
+    10/3/2019
+  </div>
+  <div
+    className="col col-2"
+    data-label="Customer Name"
+  />
+  <div
+    className="col col-3"
+    data-label="Customer Email"
+  />
+  <div
+    className="col col-4"
+    data-label="Customer Phone"
+  />
+</li>
+`;

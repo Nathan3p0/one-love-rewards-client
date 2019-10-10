@@ -21,4 +21,13 @@ const CustomerLookupForm = (props) => {
     )
 }
 
+CustomerLookupForm.defaultProps = {
+    handlePhoneSubmit: () => { },
+    handleInputChange: () => { },
+    phone: '734-673-5101',
+    error: {
+        routine: 'error'
+    }
+}
+
 export default CustomerLookupForm

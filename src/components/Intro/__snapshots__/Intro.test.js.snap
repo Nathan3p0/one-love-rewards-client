@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Intro Component Rendering Tests renders to UI as expected 1`] = `
+<section
+  className="main__content-intro"
+>
+  <div
+    className="main__content-intro--container"
+  >
+    <img
+      alt=""
+      className="main__content-intro--logo"
+      src="large-logo.png"
+    />
+    <h2>
+      Dining Rewards Made Easy...
+    </h2>
+    <button
+      className="btn customer__btn"
+      onClick={[Function]}
+    >
+      Customer Login
+    </button>
+    <button
+      className="btn business__btn"
+      onClick={[Function]}
+    >
+      Business Login
+    </button>
+  </div>
+</section>
+`;
+
+exports[`Intro Component Rendering Tests renders to UI as expected with PROPS 1`] = `
+<section
+  className="main__content-intro"
+>
+  <div
+    className="main__content-intro--container"
+  >
+    <img
+      alt=""
+      className="main__content-intro--logo"
+      src="large-logo.png"
+    />
+    <h2>
+      Dining Rewards Made Easy...
+    </h2>
+    <button
+      className="btn customer__btn"
+      onClick={[Function]}
+    >
+      Customer Login
+    </button>
+    <button
+      className="btn business__btn"
+      onClick={[Function]}
+    >
+      Business Login
+    </button>
+  </div>
+</section>
+`;

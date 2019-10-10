@@ -1,0 +1,93 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Member List Item Component Rendering Tests renders to UI as expected 1`] = `
+<form
+  className="dashboard__user-lookup--form"
+  onSubmit={[Function]}
+>
+  <h2>
+    Search for Customer
+  </h2>
+  <div
+    role="alert"
+  >
+    <p
+      className="red"
+    >
+      error
+    </p>
+  </div>
+  <div>
+    <label
+      htmlFor="phone"
+    >
+      Enter Customer Phone Number:
+    </label>
+    <br />
+    <input
+      id="phone"
+      name="phone_number"
+      onChange={[Function]}
+      pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+      placeholder="Phone Number"
+      required={true}
+      type="text"
+      value="734-673-5101"
+    />
+  </div>
+  <div>
+    <button
+      className="cust-btn"
+      type="submit"
+    >
+      Search
+    </button>
+  </div>
+</form>
+`;
+
+exports[`Member List Item Component Rendering Tests renders to UI as expected with PROPS 1`] = `
+<form
+  className="dashboard__user-lookup--form"
+  onSubmit={[Function]}
+>
+  <h2>
+    Search for Customer
+  </h2>
+  <div
+    role="alert"
+  >
+    <p
+      className="red"
+    >
+      error
+    </p>
+  </div>
+  <div>
+    <label
+      htmlFor="phone"
+    >
+      Enter Customer Phone Number:
+    </label>
+    <br />
+    <input
+      id="phone"
+      name="phone_number"
+      onChange={[Function]}
+      pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+      placeholder="Phone Number"
+      required={true}
+      type="text"
+      value="734-673-5101"
+    />
+  </div>
+  <div>
+    <button
+      className="cust-btn"
+      type="submit"
+    >
+      Search
+    </button>
+  </div>
+</form>
+`;

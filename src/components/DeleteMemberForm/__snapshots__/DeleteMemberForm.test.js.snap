@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Member List Item Component Rendering Tests renders to UI as expected 1`] = `
+<form
+  className="dashboard__add-member--form"
+  onSubmit={[Function]}
+>
+  <h2>
+    Delete Rewards Member
+  </h2>
+  <div>
+    <label
+      htmlFor="customer-phone"
+    >
+      Customer Phone Number:
+    </label>
+    <br />
+    <input
+      id="customer-phone"
+      name="phone_number"
+      onChange={[Function]}
+      pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+      placeholder="734-555-0909"
+      required={true}
+      type="tel"
+    />
+  </div>
+  <button
+    className="delete-btn"
+    type="submit"
+  >
+    Delete User
+  </button>
+</form>
+`;
+
+exports[`Member List Item Component Rendering Tests renders to UI as expected with PROPS 1`] = `
+<form
+  className="dashboard__add-member--form"
+  onSubmit={[Function]}
+>
+  <h2>
+    Delete Rewards Member
+  </h2>
+  <div>
+    <label
+      htmlFor="customer-phone"
+    >
+      Customer Phone Number:
+    </label>
+    <br />
+    <input
+      id="customer-phone"
+      name="phone_number"
+      onChange={[Function]}
+      pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+      placeholder="734-555-0909"
+      required={true}
+      type="tel"
+    />
+  </div>
+  <button
+    className="delete-btn"
+    type="submit"
+  >
+    Delete User
+  </button>
+</form>
+`;

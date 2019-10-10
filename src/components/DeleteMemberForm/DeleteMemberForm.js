@@ -16,4 +16,9 @@ const DeleteMemberForm = (props) => {
     )
 }
 
+DeleteMemberForm.defaultProps = {
+    handleSubmit: () => { },
+    handleInputChange: () => { }
+}
+
 export default DeleteMemberForm
