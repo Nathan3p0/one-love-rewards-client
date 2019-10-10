@@ -19,4 +19,8 @@ const WelcomeUser = (props) => {
     )
 }
 
+WelcomeUser.defaultProps = {
+    name: 'Nathan'
+}
+
 export default WelcomeUser

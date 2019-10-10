@@ -19,4 +19,8 @@ const RewardsList = (props) => {
     )
 }
 
+RewardsList.defaultProps = {
+    rewards: []
+}
+
 export default RewardsList;

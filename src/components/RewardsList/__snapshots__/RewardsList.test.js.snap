@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Rewards List Component Rendering Tests renders to UI as expected 1`] = `
+Array [
+  <h3>
+    Current Rewards Available:
+  </h3>,
+  <ul />,
+]
+`;
+
+exports[`Rewards List Component Rendering Tests renders to UI as expected with PROPS 1`] = `
+Array [
+  <h3>
+    Current Rewards Available:
+  </h3>,
+  <ul />,
+]
+`;
