@@ -1,0 +1,193 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Add Points Form Component Rendering Tests renders to UI as expected 1`] = `
+<section
+  className="points__update"
+>
+  <div
+    className="points__update_totals"
+  >
+    <div
+      className="points__update_current"
+    >
+      <p>
+        pts
+      </p>
+      <h3>
+        Account Balance
+      </h3>
+    </div>
+    <div
+      className="points__update_new"
+    >
+      <p>
+        pts
+      </p>
+      <h3>
+        Updated Balance
+      </h3>
+    </div>
+    <div
+      className="points__update_purchase"
+    >
+      <p>
+        $
+      </p>
+      <h3>
+        Today's Purchase
+      </h3>
+    </div>
+  </div>
+  <div
+    className="points__update_formcontainer"
+  >
+    <div>
+      <div
+        role="alert"
+      />
+      <p />
+      <p />
+      <p />
+      <form
+        className="points__update_form"
+      >
+        <label
+          htmlFor="purchase-total"
+        >
+          Purchase Total:
+        </label>
+        <br />
+        <input
+          id="purchase-total"
+          name="purchase_total"
+          placeholder="Purchase Total"
+          required={true}
+          type="text"
+        />
+        <br />
+        <button
+          className="done_btn"
+          type="submit"
+        >
+          Done
+        </button>
+      </form>
+    </div>
+    <div
+      className="rewards_list"
+    >
+      <h3>
+        Rewards Available
+      </h3>
+      <ul />
+    </div>
+  </div>
+</section>
+`;
+
+exports[`Add Points Form Component Rendering Tests renders to UI as expected with PROPS 1`] = `
+<section
+  className="points__update"
+>
+  <div
+    className="points__update_totals"
+  >
+    <div
+      className="points__update_current"
+    >
+      <p>
+        0
+        pts
+      </p>
+      <h3>
+        Account Balance
+      </h3>
+    </div>
+    <div
+      className="points__update_new"
+    >
+      <p>
+        24
+        pts
+      </p>
+      <h3>
+        Updated Balance
+      </h3>
+    </div>
+    <div
+      className="points__update_purchase"
+    >
+      <p>
+        $
+        12
+      </p>
+      <h3>
+        Today's Purchase
+      </h3>
+    </div>
+  </div>
+  <div
+    className="points__update_formcontainer"
+  >
+    <div>
+      <div
+        role="alert"
+      >
+        <p
+          className="red"
+        >
+          error
+        </p>
+      </div>
+      <p>
+        Nathan
+      </p>
+      <p>
+        734'673'5101
+      </p>
+      <p>
+        nszelag@live.com
+      </p>
+      <h4>
+        $5 Off
+         to be redeemed.
+      </h4>
+      <form
+        className="points__update_form"
+        onSubmit={[Function]}
+      >
+        <label
+          htmlFor="purchase-total"
+        >
+          Purchase Total:
+        </label>
+        <br />
+        <input
+          id="purchase-total"
+          name="purchase_total"
+          onChange={[Function]}
+          placeholder="Purchase Total"
+          required={true}
+          type="text"
+          value={12}
+        />
+        <br />
+        <button
+          className="done_btn"
+          type="submit"
+        >
+          Done
+        </button>
+      </form>
+    </div>
+    <div
+      className="rewards_list"
+    >
+      <h3>
+        Rewards Available
+      </h3>
+      <ul />
+    </div>
+  </div>
+</section>
+`;

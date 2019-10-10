@@ -5,7 +5,10 @@ import RewardsListItem from '../RewardsListItem/RewardsListItem'
 class AddPointsForm extends Component {
 
     static defaultProps = {
-        rewards: []
+        rewards: [],
+        id: 12,
+        fetchRewards: () => {},
+        fetchCustomerPointsInfo: () => {}
     }
 
     componentDidMount() {

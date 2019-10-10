@@ -30,7 +30,6 @@ class AddPoints extends Component {
 
     calculateUpdatedPoints = (value) => {
         const parsedValue = parseFloat(value)
-        console.log(parsedValue)
         if(!parsedValue) {
             return this.state.points_total
         } else {
