@@ -1,9 +1,19 @@
 .dashboard__all-members {
     max-width: 62.5rem;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     padding-left: .625rem;
     padding-right: .625rem;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spinner {
+    color: white;
+    margin: 0 auto;
 }
 
 h2 {

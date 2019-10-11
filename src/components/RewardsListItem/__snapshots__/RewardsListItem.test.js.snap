@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Rewards List Component Rendering Tests renders to UI as expected 1`] = `
+exports[`Rewards List Item Component Rendering Tests renders to UI as expected 1`] = `
 <li>
   <div
     className="user__content-rewards--item"
@@ -25,7 +25,7 @@ exports[`Rewards List Component Rendering Tests renders to UI as expected 1`] = 
 </li>
 `;
 
-exports[`Rewards List Component Rendering Tests renders to UI as expected with PROPS 1`] = `
+exports[`Rewards List Item Component Rendering Tests renders to UI as expected with PROPS 1`] = `
 <li>
   <div
     className="user__content-rewards--item"

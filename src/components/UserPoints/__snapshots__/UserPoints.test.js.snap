@@ -1,11 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Card Component Rendering Tests renders to UI as expected 1`] = `
+exports[`User Points Component Rendering Tests renders to UI as expected 1`] = `
 <section
   className="user__content-info--graph"
 >
   <h3>
-    Current Point Status
+    Current Point Status:
   </h3>
   <div
     className="c100 pNaN big dark"
@@ -32,15 +32,18 @@ exports[`Card Component Rendering Tests renders to UI as expected 1`] = `
       pts
     </p>
   </div>
+  <p>
+    **Percentage to your next reward**
+  </p>
 </section>
 `;
 
-exports[`Card Component Rendering Tests renders to UI as expected with PROPS 1`] = `
+exports[`User Points Component Rendering Tests renders to UI as expected with PROPS 1`] = `
 <section
   className="user__content-info--graph"
 >
   <h3>
-    Current Point Status
+    Current Point Status:
   </h3>
   <div
     className="c100 p5000 big dark"
@@ -68,5 +71,8 @@ exports[`Card Component Rendering Tests renders to UI as expected with PROPS 1`]
       pts
     </p>
   </div>
+  <p>
+    **Percentage to your next reward**
+  </p>
 </section>
 `;

@@ -17,6 +17,9 @@ exports[`Description Component Rendering Tests renders to UI as expected 1`] = `
     <div
       className="main__content-description--info-item"
     >
+      <i
+        className="fa"
+      />
       <h3>
         Dine
       </h3>
@@ -32,6 +35,9 @@ exports[`Description Component Rendering Tests renders to UI as expected 1`] = `
     <div
       className="main__content-description--info-item"
     >
+      <i
+        className="fa"
+      />
       <h3>
         Eat
       </h3>
@@ -47,6 +53,9 @@ exports[`Description Component Rendering Tests renders to UI as expected 1`] = `
     <div
       className="main__content-description--info-item"
     >
+      <i
+        className="fa"
+      />
       <h3>
         Get Rewarded
       </h3>

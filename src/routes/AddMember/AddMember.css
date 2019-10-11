@@ -1,7 +1,6 @@
 .dashboard__add-member {
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .dashboard__add-member h2 {
@@ -14,21 +13,7 @@
 
 .dashboard__add-member--form {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-}
-
-button {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-    outline: none;
-    border: 0;
-    vertical-align: middle;
-    text-decoration: none;
-    font-size: inherit;
-    font-family: inherit;
 }
 
 button.create-btn {
@@ -40,12 +25,10 @@ button.create-btn {
     padding: 1.25rem 2rem;
     background: #FFE74C;
     text-transform: uppercase;
+    align-self: center;
 }
 
 button.create-btn:hover,
-button.go-back-btn:hover,
-button.go-back-btn:focus,
-button.go-back-btn:active,
 button.create-btn:focus,
 button.create-btn:active {
     letter-spacing: 0.125rem;

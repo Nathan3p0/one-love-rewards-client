@@ -1,7 +1,7 @@
 .dashboard__delete-member {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .dashboard__delete-member h2 {
@@ -10,36 +10,9 @@
     align-self: center;
 }
 
-
-
 .dashboard__delete-member--form {
     display: flex;
-    justify-content: center;
-    align-items: flex-end;
     flex-direction: column;
-}
-
-button {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-    outline: none;
-    border: 0;
-    vertical-align: middle;
-    text-decoration: none;
-    font-size: inherit;
-    font-family: inherit;
-}
-
-button.go-back-btn {
-    width: 15rem;
-    margin-top: 1rem;
-    transition: all 0.5s cubic-bezier(0.65, -0.25, 0.25, 1.95);
-    font-weight: 900;
-    color: #fff;
-    padding: 1.25rem 2rem;
-    background: #202121;
-    text-transform: uppercase;
 }
 
 button.delete-btn {
@@ -51,12 +24,10 @@ button.delete-btn {
     padding: 1.25rem 2rem;
     background: #FFE74C;
     text-transform: uppercase;
+    align-self: center;
 }
 
 button.delete-btn:hover,
-button.go-back-btn:hover,
-button.go-back-btn:focus,
-button.go-back-btn:active,
 button.delete-btn:focus,
 button.delete-btn:active {
     letter-spacing: 0.125rem;

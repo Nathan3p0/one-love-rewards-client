@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './AllMembers.css'
 import '../../components/MemberListItem/MemberListItem'
 import MemberListItem from '../../components/MemberListItem/MemberListItem'
@@ -7,11 +8,15 @@ import DashboardApiService from '../../services/dashboard-api-services'
 const AllMembers = () => {
 
     const [members, setMembers] = useState([])
+    const [loading, setLoading] = useState(true)
     const [error, setError] = useState(null)
 
     useEffect(() => {
         DashboardApiService.getAllCustomers()
-            .then(res => setMembers(res))
+            .then(res => {
+                setMembers(res)
+                setLoading(false)
+            })
             .catch(res => {
                 setError({ error: res.error })
             })
@@ -26,19 +31,31 @@ const AllMembers = () => {
         />
     )
 
+    let sectionClass
+
+    if (loading) {
+        sectionClass = 'dashboard__all-members flex'
+    } else if (!loading) {
+        sectionClass = 'dashboard__all-members'
+    }
+
     return (
-        <section className="dashboard__all-members">
-            <h2>All Registered Members</h2>
-            <div role='alert'>
-                {error && <p className='red'>{error}</p>}
-            </div>
-            <ul className='responsiveTable'>
-                <AllMembersTableHeader />
-                {listAllMembers}
-            </ul>
+        <section className={sectionClass}>
+            {loading ? <FontAwesomeIcon icon='spinner' size='6x' className='spinner' spin /> :
+                <>
+                    <h2>All Registered Members</h2>
+                    <div role='alert'>
+                        {error && <p className='red'>{error}</p>}
+                    </div>
+                    <ul className='responsiveTable'>
+                        <AllMembersTableHeader />
+                        {listAllMembers}
+                    </ul>
+                </>}
         </section>
     )
 }
+
 
 export default AllMembers
 

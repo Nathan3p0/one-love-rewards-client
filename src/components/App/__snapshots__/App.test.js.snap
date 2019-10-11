@@ -63,23 +63,9 @@ exports[`App Component Rendering Tests renders to UI as expected 1`] = `
         <div
           className="main__content-description--info-item"
         >
-          <svg
-            aria-hidden="true"
-            className="svg-inline--fa fa-receipt fa-w-12 fa-6x fa-rotate-null fa-pull-null receipt"
-            data-icon="receipt"
-            data-prefix="fas"
-            focusable="false"
-            role="img"
-            style={Object {}}
-            viewBox="0 0 384 512"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M358.4 3.2L320 48 265.6 3.2a15.9 15.9 0 0 0-19.2 0L192 48 137.6 3.2a15.9 15.9 0 0 0-19.2 0L64 48 25.6 3.2C15-4.7 0 2.8 0 16v480c0 13.2 15 20.7 25.6 12.8L64 464l54.4 44.8a15.9 15.9 0 0 0 19.2 0L192 464l54.4 44.8a15.9 15.9 0 0 0 19.2 0L320 464l38.4 44.8c10.5 7.9 25.6.4 25.6-12.8V16c0-13.2-15-20.7-25.6-12.8zM320 360c0 4.4-3.6 8-8 8H72c-4.4 0-8-3.6-8-8v-16c0-4.4 3.6-8 8-8h240c4.4 0 8 3.6 8 8v16zm0-96c0 4.4-3.6 8-8 8H72c-4.4 0-8-3.6-8-8v-16c0-4.4 3.6-8 8-8h240c4.4 0 8 3.6 8 8v16zm0-96c0 4.4-3.6 8-8 8H72c-4.4 0-8-3.6-8-8v-16c0-4.4 3.6-8 8-8h240c4.4 0 8 3.6 8 8v16z"
-              fill="currentColor"
-              style={Object {}}
-            />
-          </svg>
+          <i
+            className="fa"
+          />
           <h3>
             Dine
           </h3>
@@ -95,23 +81,9 @@ exports[`App Component Rendering Tests renders to UI as expected 1`] = `
         <div
           className="main__content-description--info-item"
         >
-          <svg
-            aria-hidden="true"
-            className="svg-inline--fa fa-drumstick-bite fa-w-16 fa-6x fa-rotate-null fa-pull-null chicken"
-            data-icon="drumstick-bite"
-            data-prefix="fas"
-            focusable="false"
-            role="img"
-            style={Object {}}
-            viewBox="0 0 512 512"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M462.8 49.57a169.44 169.44 0 0 0-239.5 0C187.82 85 160.13 128 160.13 192v85.83l-40.62 40.59c-9.7 9.69-24 11.07-36.78 6a60.33 60.33 0 0 0-65 98.72C33 438.39 54.24 442.7 73.85 438.21c-4.5 19.6-.18 40.83 15.1 56.1a60.35 60.35 0 0 0 98.8-65c-5.09-12.73-3.72-27 6-36.75L234.36 352h85.89a187.87 187.87 0 0 0 61.89-10c-39.64-43.89-39.83-110.23 1.05-151.07 34.38-34.36 86.76-39.46 128.74-16.8 1.3-44.96-14.81-90.28-49.13-124.56z"
-              fill="currentColor"
-              style={Object {}}
-            />
-          </svg>
+          <i
+            className="fa"
+          />
           <h3>
             Eat
           </h3>
@@ -127,23 +99,9 @@ exports[`App Component Rendering Tests renders to UI as expected 1`] = `
         <div
           className="main__content-description--info-item"
         >
-          <svg
-            aria-hidden="true"
-            className="svg-inline--fa fa-money-bill-alt fa-w-20 fa-6x fa-rotate-null fa-pull-null money"
-            data-icon="money-bill-alt"
-            data-prefix="fas"
-            focusable="false"
-            role="img"
-            style={Object {}}
-            viewBox="0 0 640 512"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M352 288h-16v-88c0-4.42-3.58-8-8-8h-13.58c-4.74 0-9.37 1.4-13.31 4.03l-15.33 10.22a7.994 7.994 0 0 0-2.22 11.09l8.88 13.31a7.994 7.994 0 0 0 11.09 2.22l.47-.31V288h-16c-4.42 0-8 3.58-8 8v16c0 4.42 3.58 8 8 8h64c4.42 0 8-3.58 8-8v-16c0-4.42-3.58-8-8-8zM608 64H32C14.33 64 0 78.33 0 96v320c0 17.67 14.33 32 32 32h576c17.67 0 32-14.33 32-32V96c0-17.67-14.33-32-32-32zM48 400v-64c35.35 0 64 28.65 64 64H48zm0-224v-64h64c0 35.35-28.65 64-64 64zm272 192c-53.02 0-96-50.15-96-112 0-61.86 42.98-112 96-112s96 50.14 96 112c0 61.87-43 112-96 112zm272 32h-64c0-35.35 28.65-64 64-64v64zm0-224c-35.35 0-64-28.65-64-64h64v64z"
-              fill="currentColor"
-              style={Object {}}
-            />
-          </svg>
+          <i
+            className="fa"
+          />
           <h3>
             Get Rewarded
           </h3>
