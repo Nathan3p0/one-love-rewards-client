@@ -2,7 +2,7 @@
 
 <img width="988" alt="landing page screenshot" src="./screenshots/landing-page.png">
 <img width="988" alt="customer page screenshot" src="./screenshots/customer-dash.png">
-<img width="988" alt="business page screenshot" src="./screenshots/business-dash.png">
+<img width="988" alt="business page screenshot" src="./screenshots/admin-dash.png">
 
 [Live App](https://www.oneloverewards.surge.sh)
 
