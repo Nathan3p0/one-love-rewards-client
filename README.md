@@ -4,7 +4,7 @@
 <img width="988" alt="customer page screenshot" src="./screenshots/customer-dash.png">
 <img width="988" alt="business page screenshot" src="./screenshots/admin-dash.png">
 
-[Live App](https://www.oneloverewards.surge.sh)
+[Live App](http://www.oneloverewards.surge.sh)
 
 One Love Rewards is an open source restaurant rewards platform that allows business owners to implement a free to use program. The app has numerous features which includes a customer dashboard to view points status, a business dashboard which allows you to alter customer accounts, and the ability to add/redeem points for customer purchases.
 
