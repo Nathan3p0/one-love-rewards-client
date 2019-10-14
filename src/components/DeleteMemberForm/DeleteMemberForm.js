@@ -8,10 +8,10 @@ const DeleteMemberForm = (props) => {
             <div>
                 <label htmlFor="customer-phone">Customer Phone Number:</label>
                 <br />
-                <input type="tel" id="customer-phone" name="phone_number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" onChange={props.handleInputChange}
+                <input type="text" id="customer-phone" name="phone_number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" onChange={props.handleInputChange}
                     placeholder="734-555-0909" required />
             </div>
-            <button type="submit" className="delete-btn" >Delete User</button>
+            <button type="submit" className="delete-btn" >Are you sure?</button>
         </form>
     )
 }

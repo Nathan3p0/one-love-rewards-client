@@ -7,17 +7,11 @@ import './DeleteMember.css'
 class AddMember extends Component {
     state = {
         phone_number: '',
-        deleteConfirm: false,
         error: null
-    }
-
-    handleDeleteConfirm = () => {
-        this.setState({ deleteConfirm: true })
     }
 
     handleSubmit = e => {
         e.preventDefault()
-
         DashboardApiService.deleteCustomer(this.state.phone_number)
             .then(res => {
                 this.props.history.push(`/dashboard/members`);
@@ -47,7 +41,7 @@ class AddMember extends Component {
     render() {
         return (
             <section className="dashboard__delete-member">
-                <DeleteMemberForm handleSubmit={this.handleSubmit} handleInputChange={this.handleInputChange} handleDeleteConfirm={this.handleDeleteConfirm} deleteConfirm={this.state.deleteConfirm} error={this.state.error} />
+                <DeleteMemberForm handleSubmit={this.handleSubmit} handleInputChange={this.handleInputChange} error={this.state.error} />
             </section>
         )
     }

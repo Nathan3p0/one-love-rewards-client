@@ -30,5 +30,6 @@ button.delete-btn {
 button.delete-btn:hover,
 button.delete-btn:focus,
 button.delete-btn:active {
-    letter-spacing: 0.125rem;
+    background: rgb(202, 27, 27);
+    color: #FFF;
 }
