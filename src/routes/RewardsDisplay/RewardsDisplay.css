@@ -31,6 +31,23 @@
     width: 85%;
   }
 
+  button.logout-btn {
+    width: 15rem;
+    margin-top: 2rem;
+    transition: all 0.5s cubic-bezier(0.65, -0.25, 0.25, 1.95);
+    font-weight: 900;
+    color: #ffffff;
+    padding: 1.25rem 2rem;
+    background: rgb(199, 34, 34);
+    text-transform: uppercase;
+}
+
+button.logout-btn:hover,
+button.logout-btn:focus,
+button.logout-btn:active {
+    letter-spacing: 0.125rem;
+}
+
 
   @media screen and (max-width: 1000px) {
     .user__content {

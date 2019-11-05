@@ -85,6 +85,7 @@ class RewardsDisplay extends Component {
                 </section>
                 <section className="user__content-rewards">
                     <RewardsList button={false} points={points} rewards={rewards} />
+                    <button className="logout-btn" onClick={() => { this.props.history.push('/') }}>Log out</button>
                 </section>
             </main>
         )
